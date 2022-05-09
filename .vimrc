@@ -35,6 +35,8 @@ nnoremap <silent> <C-l> gt
 
 nnoremap <silent> <tab> :NERDTreeToggle<Enter>
 let NERDTreeMinimalUI=1
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
+let NERDTreeRespectWildIgnore=1
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
