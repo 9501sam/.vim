@@ -28,6 +28,10 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" ctags
+" sudo apt install ctags
+set cscopetag
+
 set cinoptions+=:0,t0
 " remap
 nnoremap <silent> <C-h> gT
