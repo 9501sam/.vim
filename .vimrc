@@ -8,8 +8,8 @@ set scrolloff=13
 set mouse=n
 nmap <ScrollWheelUp> 7k
 nmap <ScrollWheelDown> 7j
-nmap <C-p> 7k
-nmap <C-n> 7j
+nmap <C-k> 7k
+nmap <C-j> 7j
 
 set noswapfile
 
