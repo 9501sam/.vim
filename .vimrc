@@ -1,7 +1,16 @@
 set number
 set clipboard=unnamed
 " set cursorline
+
+" set scroll
 set scrolloff=13
+" set scroll=5
+set mouse=n
+nmap <ScrollWheelUp> 7k
+nmap <ScrollWheelDown> 7j
+nmap <C-p> 7k
+nmap <C-n> 7j
+
 set noswapfile
 
 " search
@@ -43,7 +52,7 @@ set cscopeverbose
 nmap zs :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap zg :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap zc :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap zt :cs find t <C-R>=expand("<cword>")<CR><CR>
+" nmap zt :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap ze :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
@@ -56,6 +65,7 @@ nnoremap <silent> <C-h> gT
 nnoremap <silent> <C-l> gt
 
 nnoremap <silent> <tab> :NERDTreeToggle<Enter>
+
 let NERDTreeMinimalUI=1
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 let NERDTreeRespectWildIgnore=1
