@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/turtlegod/c-project/chibicc'
+let g:netrw_dirhist_9='/home/turtlegod/c-project/lcc/src'
 let g:netrw_dirhist_8='/home/turtlegod/Java_Project/starbuzz/bin/starbuzz'
 let g:netrw_dirhist_7='/home/turtlegod/6.828/xv6-labs-2021'
 let g:netrw_dirhist_6='/home/turtlegod/6.828/xv6-labs-2021/kernel'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/turtlegod/C_Project/bash/examples'
 let g:netrw_dirhist_3='/home/turtlegod/C_Project/Poker'
 let g:netrw_dirhist_2='/home/turtlegod/C_Project'
 let g:netrw_dirhist_1='/home/turtlegod/C_Project/tic-tac-toe'
-let g:netrw_dirhist_0='/home/turtlegod/C_Project/Poker'
-let g:netrw_dirhist_9='/home/turtlegod/C_Project'
