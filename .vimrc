@@ -1,4 +1,4 @@
-set relativenumber
+set number relativenumber
 set clipboard=unnamed
 " set cursorline
 
@@ -80,4 +80,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'sudar/vim-arduino-syntax'
 call plug#end()
