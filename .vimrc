@@ -63,7 +63,7 @@ set cinoptions+=:0,t0
 " remap
 nnoremap <silent> <C-h> gT
 nnoremap <silent> <C-l> gt
-
+nnoremap \ :noh<return>
 nnoremap <silent> <tab> :NERDTreeToggle<Enter>
 
 let NERDTreeMinimalUI=1
