@@ -39,6 +39,9 @@ filetype plugin on
 
 " ctags
 " sudo apt install ctags
+" https://ivan7645.github.io/2016/07/12/vim_to_si/
+set tags=tags;
+set autochdir
 set cscopetag
 set csto=0
 
