@@ -31,6 +31,7 @@ set splitright
 " color
 syntax on
 " colorscheme darkblue
+" colorscheme gruvbox
 
 " filetype
 filetype on
@@ -84,4 +85,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sudar/vim-arduino-syntax'
+Plug 'morhetz/gruvbox'
 call plug#end()
+
+colorscheme gruvbox
+set bg=dark
