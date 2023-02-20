@@ -88,5 +88,10 @@ Plug 'sudar/vim-arduino-syntax'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
+autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
 colorscheme gruvbox
 set bg=dark
+let g:airline_powerline_fonts=1
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_transparent_bg=1
+colorscheme gruvbox
