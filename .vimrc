@@ -42,10 +42,11 @@ filetype plugin on
 " sudo apt install ctags
 " https://ivan7645.github.io/2016/07/12/vim_to_si/
 set tags=tags;
-set autochdir
+" set autochdir
 set cscopetag
 set csto=0
 
+" $ cscope -Rbqk
 if filereadable("cscope.out")
    cs add cscope.out
 elseif $CSCOPE_DB != ""
@@ -72,10 +73,17 @@ nnoremap <silent> <tab> :NERDTreeToggle<Enter>
 
 let NERDTreeMinimalUI=1
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
-let NERDTreeRespectWildIgnore=1
+" let NERDTreeRespectWildIgnore=1
+" let NERDTreeQuitOnOpen=1
+" autocmd BufWinEnter * NERDTreeMirror
+" autocmd BufEnter NERD_tree_* call SomeFunctionToChangeTheTabLabel
+
+nnoremap <C-t> :CtrlPTag<cr>
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+packloadall
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -86,7 +94,13 @@ Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sudar/vim-arduino-syntax'
 Plug 'morhetz/gruvbox'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+" Plug 'tpope/vim-surround'
 call plug#end()
+
 
 autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
 colorscheme gruvbox
