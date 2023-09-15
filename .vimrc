@@ -71,6 +71,8 @@ nnoremap <silent> <C-l> gt
 nnoremap \ :noh<return>
 nnoremap <silent> <S-Tab> :NERDTreeToggle<Enter>
 
+set paste
+
 let NERDTreeMinimalUI=1
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 " let NERDTreeRespectWildIgnore=1
