@@ -71,8 +71,6 @@ nnoremap <silent> <C-l> gt
 nnoremap \ :noh<return>
 nnoremap <silent> <S-Tab> :NERDTreeToggle<Enter>
 
-set paste
-
 let NERDTreeMinimalUI=1
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 " let NERDTreeRespectWildIgnore=1
@@ -111,3 +109,5 @@ let g:airline_powerline_fonts=1
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_transparent_bg=1
 colorscheme gruvbox
+
+nnoremap <C-S-f> :set invpaste<CR>
