@@ -111,3 +111,4 @@ let g:gruvbox_transparent_bg=1
 colorscheme gruvbox
 
 nnoremap <C-S-f> :set invpaste<CR>
+set backspace=indent,eol,start
