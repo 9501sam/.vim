@@ -112,3 +112,4 @@ colorscheme gruvbox
 
 nnoremap <C-S-f> :set invpaste<CR>
 set backspace=indent,eol,start
+set belloff=all
