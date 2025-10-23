@@ -69,6 +69,7 @@ set cinoptions+=:0,t0
 nnoremap <silent> <C-h> gT
 nnoremap <silent> <C-l> gt
 nnoremap \ :noh<return>
+nnoremap * *N
 nnoremap <silent> <S-Tab> :NERDTreeToggle<Enter>
 
 let NERDTreeMinimalUI=1
@@ -96,6 +97,7 @@ Plug 'sudar/vim-arduino-syntax'
 Plug 'morhetz/gruvbox'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 " Plug 'tpope/vim-surround'
@@ -111,5 +113,6 @@ let g:gruvbox_transparent_bg=1
 colorscheme gruvbox
 
 nnoremap <C-S-f> :set invpaste<CR>
+inoremap <C-f> <C-o>:set invpaste<CR>
 set backspace=indent,eol,start
 set belloff=all
