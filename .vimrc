@@ -98,6 +98,7 @@ Plug 'morhetz/gruvbox'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 " Plug 'tpope/vim-surround'
