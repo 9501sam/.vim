@@ -11,6 +11,8 @@ nmap <ScrollWheelDown> 7j
 nmap <C-k> 7k
 nmap <C-j> 7j
 
+vnoremap <C-c> "+y"
+
 set noswapfile
 
 " search
